@@ -18,7 +18,7 @@ async def on_ready():
 
 @bot.event
 async def on_message(msg):
-    if int(random.random() * 256) == 0:
+    if int(random.random() * 256) == 0 or msg.content == 'idk whats uncle gotta say about that':
         print("Uncle.")
         post = genPost()
         if random.random() < 0.5:
